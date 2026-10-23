@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+:root {
+	--paper: #fafafa;
+	--ink: #0a0a0a;
+}
+
+@theme inline {
+	/*
+	 * SF Pro via the system-font keywords: Apple platforms resolve -apple-system
+	 * / BlinkMacSystemFont to it natively, with no webfont to download and no
+	 * licensing problem (SF Pro may not be self-hosted for the web). Everyone
+	 * else falls through to their own platform sans.
+	 */
+	--font-sans:
+		-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', system-ui, 'Segoe UI',
+		Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+
+	--color-paper: var(--paper);
+	--color-ink: var(--ink);
+}
+
+html {
+	font-size: 19px;
+	-webkit-font-smoothing: antialiased;
+}
